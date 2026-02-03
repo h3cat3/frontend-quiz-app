@@ -9,27 +9,82 @@
   <title>Frontend Mentor | Frontend quiz app</title>
 </head>
 <body>
+  <header>
+    <!--subject-->
+    <div ></div>
+    <!--light to dark theme switch-->
+    <div class="">
+      <img src="assets/images/icon-sun-dark.svg" als="light theme">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <img src="assets/images/icon-moon-dark.svg" alt="dark theme">
+    </div>
+  </header>
   <main>
-    <div class="switch">
-      <img src="assets/images/icon-sun-light.svg" als="light mode">
-      <img src="assets/images/icon-sun-light.svg" alt="dark mode">
+    
+    <!-- Quiz menu start -->
+    <div class="">
+      <section class="">
+       <h1 class="">Welcome to the <span class=""> Frontend Quiz!</span></h1>
+       <p class="">Pick a subject to get started.</p>
+      </section>
+      <section class="">
+        <button class="card__btn">
+          <img src="assets/images/icon-html.svg" alt="" class="card__btn-img">
+          HTML
+        </button>
+        <button class="card__btn">
+          <img src="assets/images/icon-css.svg" alt="" class="card__btn-img">
+          CSS
+        </button>
+        <button class="card__btn">
+          <img src="assets/images/icon-js.svg" alt="" class="card__btn-img">
+          JavaScript
+        </button>
+        <button class="card__btn">
+          <img src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
+           Accessibility
+        </button>
+      </section>
+    </div>
+
+    <!-- Quiz question start -->
+    <div class="">
+      <section class="">
+       <p class="">Question <span class=""><!-- number --></span> of 10</p>
+       <h2 class=""></h2>
+       <div class=""><div class=""></div></div>
+      </section>
+      <section class="">
+        <button class="card__btn">
+          <span class="">A</span>
+          <span class=""><!--answer--></span>
+        </button>
+        <button class="card__btn">
+          <span class="">B</span>
+          <span class=""><!--answer--></span>
+        </button>
+        <button class="card__btn">
+          <span class="">C</span>
+          <span class=""><!--answer--></span>
+        </button>
+        <button class="card__btn">
+          <span class="">D</span>
+          <span class=""><!--answer--></span>
+        </button>
+        <button class="card__btn">
+         Submit Answer
+        </button>
+      </section>
     </div>
   </main>
-  <!-- Quiz menu start -->
 
-  Welcome to the Frontend Quiz!
-  Pick a subject to get started.
 
-  HTML
-  CSS
-  JavaScript
-  Accessibility
+  
 
-  <!-- Quiz menu end -->
-
-  <!-- Quiz question start -->
-
-  Question <!-- number --> of 10
+  
 
   A
   B
