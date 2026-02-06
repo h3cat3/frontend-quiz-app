@@ -69,7 +69,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-I have learn gow to create a toggle switch
+I have learn gow to switch between a light and a dark theme, from transforming an input into a toggle sitch to styling the page acordingly.
 
 ### Continued development
 
