@@ -5,104 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./dist/css/styles.css">
   <title>Frontend Mentor | Frontend quiz app</title>
 </head>
 <body>
-  <header>
-    <!--subject-->
-    <div ></div>
-    <!--light to dark theme switch-->
-    <div class="">
-      <img src="assets/images/icon-sun-dark.svg" als="light theme">
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-      <img src="assets/images/icon-moon-dark.svg" alt="dark theme">
-    </div>
-  </header>
-  <main>
+
+  <div class="content">
+    <header class="header">
+      <!--subject-->
+      <div class="header__right">
+        
+      </div>
+      <!--light to dark theme switch-->
+      <div class="header__left">
+        <img src="assets/images/icon-sun-dark.svg" als="light theme">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <img src="assets/images/icon-moon-dark.svg" alt="dark theme">
+      </div>
+    </header>
     
-    <!-- Quiz menu start -->
-    <div class="">
-      <section class="">
-       <h1 class="">Welcome to the <span class=""> Frontend Quiz!</span></h1>
-       <p class="">Pick a subject to get started.</p>
-      </section>
-      <section class="">
-        <button class="card__btn">
-          <img src="assets/images/icon-html.svg" alt="" class="card__btn-img">
-          HTML
-        </button>
-        <button class="card__btn">
-          <img src="assets/images/icon-css.svg" alt="" class="card__btn-img">
-          CSS
-        </button>
-        <button class="card__btn">
-          <img src="assets/images/icon-js.svg" alt="" class="card__btn-img">
-          JavaScript
-        </button>
-        <button class="card__btn">
-          <img src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
-           Accessibility
-        </button>
-      </section>
-    </div>
-
-    <!-- Quiz question start -->
-    <div class="">
-      <section class="">
-       <p class="">Question <span class=""><!-- number --></span> of 10</p>
-       <h2 class=""></h2>
-       <div class=""><div class=""></div></div>
-      </section>
-      <section class="">
-        <button class="card__btn">
-          <span class="">A</span>
-          <span class=""><!--answer--></span>
-        </button>
-        <button class="card__btn">
-          <span class="">B</span>
-          <span class=""><!--answer--></span>
-        </button>
-        <button class="card__btn">
-          <span class="">C</span>
-          <span class=""><!--answer--></span>
-        </button>
-        <button class="card__btn">
-          <span class="">D</span>
-          <span class=""><!--answer--></span>
-        </button>
-        <button class="card__btn">
-         Submit Answer
-        </button>
-      </section>
-    </div>
-  </main>
-
-
+    <main>
+      
+      <!-- Quiz menu start -->
+      <div class="card hidden">
+        <section class="card__item">
+         <h1 class="card__h1">Welcome to the <span class="card--bold"> Frontend Quiz!</span></h1>
+         <p class="card__p">Pick a subject to get started.</p>
+        </section>
+        <section class="card__item">
+          <button class="card__btn">
+            <img class="card__btn-index card__btn-index--orange" src="assets/images/icon-html.svg" alt="" class="card__btn-img">
+            HTML
+          </button>
+          <button class="card__btn">
+            <img class="card__btn-index card__btn-index--green" src="assets/images/icon-css.svg" alt="" class="card__btn-img">
+            CSS
+          </button>
+          <button class="card__btn">
+            <img class="card__btn-index card__btn-index--blue" src="assets/images/icon-js.svg" alt="" class="card__btn-img">
+            JavaScript
+          </button>
+          <button  class="card__btn">
+            <img class="card__btn-index card__btn-index--purple" src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
+             Accessibility
+          </button>
+        </section>
+      </div>
   
-
-  
-
-  A
-  B
-  C
-  D
-
-  Submit answer
-
-  <!-- Quiz question end -->
-
-  <!-- Quiz completed start -->
-
-  Quiz completed
-  You scored...
-
-  <!-- score --> out of 10
-
-  <!-- Quiz completed end -->
-
+      <!-- Quiz question start -->
+      <div class="card hidden" >
+        <section class="card__item">
+         <p class="card__p">Question <span class="">6</span> of 10</p>
+         <h2 class="card__h2">Wich of thesecolor contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
+         <div class="bar"><div class="bar__fill"></div></div>
+        </section>
+        <section class="card__item">
+          <button class="card__btn card__btn--answer">
+            <div>
+              <span class="card__btn-index">A</span>
+              <span class="">4.5 : 1</span>
+            </div>
+            <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
+            <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
+          </button>
+          <button class="card__btn card__btn--answer">
+            <div>
+              <span class="card__btn-index">B</span>
+              <span class="">3 : 1</span>
+            </div>
+            <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
+            <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
+          </button>
+          <button class="card__btn card__btn--answer">
+            <div>
+              <span class="card__btn-index card__btn-index--answer">C</span>
+              <span class="">2.5 : 1</span>
+            </div>
+            <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
+            <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
+          </button>
+          <button class="card__btn card__btn--answer">
+            <div>
+              <span class="card__btn-index">D</span>
+              <span class="">5 : 1</span>
+            </div>
+            <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
+            <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
+          </button>
+          <button class="card__btn card__btn--submit">
+           Submit Answer
+          </button>
+          <div class="error hidden" aria-live="polite">
+            <img src="./assets/images/icon-incorrect.svg" alt="">
+            <span>Please select an answer</span>
+          </div>
+        </section>
+      </div>
+    </main>
+     <!-- Quiz completed start -->
+    <section class="card">
+      <div class="card__item">
+        <h2 class="card__h1">Quiz completed<spam class="card--bold">You scored...</spam></h2>
+      </div>
+      <div class="card__item">
+        <div class="card__box">
+          <div class="subject">
+            <img class="card__btn-index card__btn-index--purple" src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
+               Accessibility
+          </div>
+          <p class="card--tall">8</p>
+          <p>out of 10</p>
+        </div>
+        
+          <button class="card__btn card__btn--submit">
+           Play Again
+          </button>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

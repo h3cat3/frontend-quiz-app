@@ -1,0 +1,26 @@
+$white: #FFFFFF;
+$black: #000000;
+$grey500: #626C7F;
+$grey50: #F4F6FA;
+$blue950: #2D3949;
+$blue900: #313E51;
+$blue850: #3B4D66;
+$blue500: #3D6AFF;
+$blue300: #ABC1E1;
+$blue100: #EDF1F9;
+$blue50: #EBF0FF;
+$green500: #2FD887;
+$green100: #E0FDEF;
+$purple600: #A729F5;
+$purple100: #F6E7FF;
+$orange400: #FF7E35;
+$orange50: #FFF5ED;
+$red500: #EE5454;
+$light-theme: (
+    bg: $grey50,
+    color: $blue900,
+);
+$dark-theme: (
+    bg: $blue900,
+    color: $white,
+);

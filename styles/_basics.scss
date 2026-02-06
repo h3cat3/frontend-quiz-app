@@ -1,0 +1,28 @@
+@use "_variables" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+}
+body{
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    color: $blue900;
+    background: $grey50 url(../../assets/images/pattern-background-mobile-light.svg) center / cover no-repeat;
+    @media (min-width: 768px) {
+        background-image: url(../../assets/images/pattern-background-tablet-light.svg);
+    }
+    @media (min-width: 1024px) {
+        background-image: url(../../assets/images/pattern-background-desktop-light.svg);
+    }
+}
+
