@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/css/styles.css">
   <title>Frontend Mentor | Frontend quiz app</title>
+ 
 </head>
 <body>
 
@@ -18,19 +19,21 @@
       </div>
       <!--light to dark theme switch-->
       <div class="header__left">
-        <img src="assets/images/icon-sun-dark.svg" als="light theme">
+        <img class="theme" src="assets/images/icon-sun-dark.svg" als="light theme">
+        <img class="theme hidden" src="assets/images/icon-sun-light.svg" als="light theme">
         <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
+          <input id="switch" type="checkbox">
+          <span  class="slider round"></span>
         </label>
-        <img src="assets/images/icon-moon-dark.svg" alt="dark theme">
+        <img class="theme" src="assets/images/icon-moon-dark.svg" alt="dark theme">
+        <img class="theme hidden" src="assets/images/icon-moon-light.svg" alt="dark theme">
       </div>
     </header>
     
     <main>
       
       <!-- Quiz menu start -->
-      <div class="card hidden">
+      <div class="card">
         <section class="card__item">
          <h1 class="card__h1">Welcome to the <span class="card--bold"> Frontend Quiz!</span></h1>
          <p class="card__p">Pick a subject to get started.</p>
@@ -106,7 +109,7 @@
       </div>
     </main>
      <!-- Quiz completed start -->
-    <section class="card">
+    <section class="card hidden">
       <div class="card__item">
         <h2 class="card__h1">Quiz completed<spam class="card--bold">You scored...</spam></h2>
       </div>
@@ -126,5 +129,6 @@
       </div>
     </section>
   </div>
+   <script src="./script.js"></script>
 </body>
 </html>

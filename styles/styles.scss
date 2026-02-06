@@ -74,22 +74,28 @@
         padding: 1rem;
         border-radius: 12px;
         text-align: left;
-        background-color: $white;
+        background-color: var(--btn-bg);
         color: inherit;
         font-size: 1.15rem;
         height: 4.5rem;
         display: flex;
         align-items: center;
-        box-shadow: 0 5px 10px $blue300;
+        box-shadow: 0 5px 10px var(--btn-shadow);
          @media (min-width: 768px) {
             height: 5.5rem;
         }
          @media (min-width: 1024px) {
+
             height: 6.5rem;
         }
         &:hover{
             border: 4px solid $purple600;
+            .card__btn-index {
+                background-color: $purple600;
+                color: $white;
+            }
         }
+        
         &:active{
             transform: scale(0.99);
         }
@@ -113,6 +119,10 @@
             @media (min-width: 1024px) {
                 height: 104px
             }
+            &:hover{
+                background-color: $filter;
+                border: none;
+            }
         }
     }
     &__btn-index{
@@ -123,6 +133,7 @@
         padding: 10px;
         text-align: center;
         margin-right: 1rem;
+        color: $grey500;
         &--orange{
             background-color: $orange50;
         }
@@ -150,7 +161,8 @@
     &__box{
         @extend %flex-display;
         flex-direction: column;
-        background-color:$white;
+        gap: 1rem;
+        background-color: var(--btn-bg);
         border-radius: 24px;
         padding: 3rem;
         
@@ -158,6 +170,6 @@
 }
 .error{
     @extend %flex-display;
-    color: $red500;
+    color: var(--error);
     font-size: 1.15rem;
 }

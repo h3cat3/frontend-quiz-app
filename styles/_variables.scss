@@ -1,4 +1,5 @@
 $white: #FFFFFF;
+$filter: rgba(167, 41, 245,0.5);
 $black: #000000;
 $grey500: #626C7F;
 $grey50: #F4F6FA;
@@ -11,16 +12,39 @@ $blue100: #EDF1F9;
 $blue50: #EBF0FF;
 $green500: #2FD887;
 $green100: #E0FDEF;
-$purple600: #A729F5;
+$purple600: rgb(167, 41, 245);
 $purple100: #F6E7FF;
 $orange400: #FF7E35;
 $orange50: #FFF5ED;
 $red500: #EE5454;
 $light-theme: (
     bg: $grey50,
-    color: $blue900,
-);
+    text: $blue900,
+    bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg),
+    bg-tablet: url(../../assets/images/pattern-background-tablet-light.svg),
+    bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg),
+    btn-bg: $white,
+    btn-shadow: $blue300,
+    error: $red500,
+    );
 $dark-theme: (
     bg: $blue900,
-    color: $white,
+    text: $white,
+     bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg),
+    bg-tablet: url(../../assets/images/pattern-background-tablet-dark.svg),
+    bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg),
+    btn-bg: $blue850,
+    btn-shadow: $blue950,
+    error: $grey50,
 );
+@mixin theme-vars($theme-map) {
+    @each $key, $value in $theme-map {
+        --#{$key}: #{$value};
+    }
+}
+:root[data-theme="light"] {
+    @include theme-vars($light-theme);
+}
+:root[data-theme="dark"] {
+    @include theme-vars($dark-theme);
+}

@@ -1,4 +1,8 @@
 @use "_variables" as *;
+@font-face {
+    font-family: Rubik;
+    src: url(../../assets/fonts/static/Rubik-Medium.ttf);
+}
 
 *{
     margin: 0;
@@ -9,6 +13,7 @@ button{
     border: none;
 }
 body{
+    font-family: Rubik, sans-serif;
     width: 100vw; 
     height: 100vh;
     display: flex;
@@ -16,13 +21,13 @@ body{
     align-items: center;
     justify-content: center;
     margin-inline: auto;
-    color: $blue900;
-    background: $grey50 url(../../assets/images/pattern-background-mobile-light.svg) center / cover no-repeat;
+    color: var(--text);
+    background: var(--bg) var(--bg-mobile) center / cover no-repeat;
     @media (min-width: 768px) {
-        background-image: url(../../assets/images/pattern-background-tablet-light.svg);
+        background-image: var(--bg-tablet);
     }
     @media (min-width: 1024px) {
-        background-image: url(../../assets/images/pattern-background-desktop-light.svg);
+        background-image: var(--bg-desktop);
     }
 }
 
