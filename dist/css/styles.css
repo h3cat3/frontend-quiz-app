@@ -1,4 +1,3 @@
-
 :root[data-theme=light] {
   --bg: #F4F6FA;
   --text: #313E51;
@@ -59,7 +58,7 @@ body {
 }
 
 .content {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .switch {
