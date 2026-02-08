@@ -39,19 +39,19 @@
          <p class="card__p">Pick a subject to get started.</p>
         </section>
         <section class="card__item">
-          <button class="card__btn">
-            <img class="card__btn-index card__btn-index--orange" src="assets/images/icon-html.svg" alt="" class="card__btn-img">
+          <button class="sunject card__btn">
+            <img class="card__btn-index card__btn-index--orange" src="assets/images/icon-html.svg" alt="">
             HTML
           </button>
-          <button class="card__btn">
-            <img class="card__btn-index card__btn-index--green" src="assets/images/icon-css.svg" alt="" class="card__btn-img">
+          <button class="sunject card__btn">
+            <img class="card__btn-index card__btn-index--green" src="assets/images/icon-css.svg" alt="">
             CSS
           </button>
-          <button class="card__btn">
+          <button class="sunject card__btn">
             <img class="card__btn-index card__btn-index--blue" src="assets/images/icon-js.svg" alt="" class="card__btn-img">
             JavaScript
           </button>
-          <button  class="card__btn">
+          <button  class="sunject card__btn">
             <img class="card__btn-index card__btn-index--purple" src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
              Accessibility
           </button>
@@ -61,44 +61,44 @@
       <!-- Quiz question start -->
       <div class="card hidden" >
         <section class="card__item">
-         <p class="card__p">Question <span class="">6</span> of 10</p>
-         <h2 class="card__h2">Wich of thesecolor contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
+         <p class="card__p">Question <span id="question -no"></span> of 10</p>
+         <h2 id="question" class="card__h2"></h2>
          <div class="bar"><div class="bar__fill"></div></div>
         </section>
         <section class="card__item">
           <button class="card__btn card__btn--answer">
-            <div>
+            <div class="options-box">
               <span class="card__btn-index">A</span>
-              <span class="">4.5 : 1</span>
+              <span class="options"></span>
             </div>
             <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
             <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
           </button>
           <button class="card__btn card__btn--answer">
-            <div>
+            <div class="options-box">
               <span class="card__btn-index">B</span>
-              <span class="">3 : 1</span>
+              <span class="options"></span>
             </div>
             <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
             <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
           </button>
           <button class="card__btn card__btn--answer">
-            <div>
+            <div class="options-box">
               <span class="card__btn-index card__btn-index--answer">C</span>
-              <span class="">2.5 : 1</span>
+              <span class="options"></span>
             </div>
             <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
             <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
           </button>
           <button class="card__btn card__btn--answer">
-            <div>
+            <div class="options-box">
               <span class="card__btn-index">D</span>
-              <span class="">5 : 1</span>
+              <span class="options"></span>
             </div>
             <img class="correct hidden" src="./assets/images/icon-correct.svg" alt="correct">
             <img class="incorrect hidden" src="./assets/images/icon-incorrect.svg" alt="incorrect">
           </button>
-          <button class="card__btn card__btn--submit">
+          <button id="submit" class="card__btn card__btn--submit">
            Submit Answer
           </button>
           <div class="error hidden" aria-live="polite">
@@ -115,15 +115,13 @@
       </div>
       <div class="card__item">
         <div class="card__box">
-          <div class="subject">
-            <img class="card__btn-index card__btn-index--purple" src="assets/images/icon-accessibility.svg" alt="" class="card__btn-img">
-               Accessibility
+          <div id="subject-score"  class="subject">
           </div>
-          <p class="card--tall">8</p>
+          <p id="result" class="card--tall"></p>
           <p>out of 10</p>
         </div>
         
-          <button class="card__btn card__btn--submit">
+          <button id="play-again" class="card__btn card__btn--submit">
            Play Again
           </button>
       </div>
